@@ -2,6 +2,7 @@ package eatest;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.Ignore;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,6 +17,7 @@ public class TestOx1Crossover {
 	private final Route route2 = new Route(new City("Cambridge"), new City("Canterbury"), new City("Carlisle"), new City("Chelmsford"), new City("Chester"));
 
 	@Test
+	@Ignore
 	public void test() {
 		Route offspring = Algorithm.crossoverOx1(this.route1, this.route2, 1, 3);
 
@@ -32,6 +34,7 @@ public class TestOx1Crossover {
 	}
 
 	@Test
+	@Ignore
 	public void test2() {
 		Route p1 = new Route("Portsmouth", "Exeter", "London", "Farnborough", "Bournemouth", "Liverpool");
 		Route p2 = new Route("Bournemouth", "Portsmouth", "Exeter", "Farnborough", "Liverpool", "London");
